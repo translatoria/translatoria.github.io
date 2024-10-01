@@ -1,0 +1,392 @@
+html {
+min-height: 100%;
+}
+
+body {
+background-color: #FFFFFF;
+ font-family: Arial, sans-serif;
+}
+
+@font-face {
+  font-family: Main;
+  src: url(Main.otf);
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #f1f1f1;
+  background:rgb(10, 88, 112);
+}
+
+::selection {
+  color: #f1f1f1;
+  background:rgb(10, 88, 112);
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 0px;
+  width: 100%;
+}
+
+
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-image: linear-gradient(#0287B0, #0A519A);
+  font-size: 14px;
+  font-family: Arial;
+  border-radius: 12px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  border-radius: 12px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: dashed;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  transition: background-color 1s ease-out 100ms
+}
+
+/* Main content */
+.main {
+  margin-top: 0px; /* Add a top margin to avoid content overlay */
+}
+
+.pt2 {
+  padding: 5px;
+  text-align: center;
+  background-color: #0f2a63;
+ font-family: Main;
+  color: white;
+  font-size: 55px;
+}
+
+.ptl {
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  border-radius: 25px;
+ font-family: Arial;
+  color: white;
+  width: 50%;
+  -o-object-position: center;
+  font-size: 55px;
+}
+
+.foot {
+height:80px;
+padding-top:25px;
+padding-bottom: 25px;
+padding-right: 13px;
+padding-left: 13px;
+  text-align: center;
+ background-color: #161717;
+ font-family: Helvetica;
+margin-left: -8px;
+  color: white;
+  font-size: 16px;
+  margin-bottom:-8px;
+column-count: 3;
+column-width: 30%;
+column-gap: 15px;
+}
+
+.littlefoot {
+ background-color: #161717;
+ font-family: Helvetica;
+margin-left: -8px;
+  color: white;
+  font-size: 18px;
+  margin-top:5px;
+  margin-bottom:-8px;
+  height: 280px;
+}
+
+/* Container holding the image and the text */
+.textcont {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  background-color: #161717;
+  color: white;
+  font-family: Helvetica;
+  Font-size: 13px;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid grey;
+width: 18%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+
+  width: 5%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #000000;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #0e121c;
+  width: 0%;
+}
+
+.cont {width: 103%;
+align-content: center;
+}
+
+.circles {
+  float: left;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Arial';
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 #444;
+  padding: 16px;
+  margin-right: 50px;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 185px;
+
+}
+
+.btext {width: 230px;
+text-align: justify;
+text-justify: inter-word;
+position: relative;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 #444;
+  padding: 16px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
+/* Three columns side by side */
+.column2 {
+  float: left;
+  width: 31%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column2 {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container2 {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container2::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #2a66bc;
+  text-align: center;
+  cursor: pointer;
+  width: 20%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-bottom:10px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #09387b;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+/* Create three equal columns that float next to each other */
+.CCcolumn {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+.footer-icons{
+margin-top: 0px;
+padding:4px;
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color:  #0287B0;
+border-radius: 2px; 
+font-size: 30px;
+text-align: center;
+line-height: 35px;
+margin-right: 3px;
+margin-bottom: 5px;
+ -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+
+.footer-icons a{
+padding:4px;
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color:  #0287B0;
+border-radius: 2px; 
+font-size: 30px;
+text-align: center;
+line-height: 35px;
+margin-right: 3px;
+margin-bottom: 5px;
+ -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.footer-icons a:hover{
+cursor: pointer;
+background-color: #0287B0;
+text-align: center;
+ box-shadow: 0 10px 10px -10px #ffffff;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
