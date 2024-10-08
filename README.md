@@ -1,8 +1,8 @@
 - 👋 Hi, I’m Victoria, an English into Brazilian Portuguese translator.
 - 😄 My pronouns are she/her.
 - 🌱 I specialize in health/well-being, culinary, and fashion.
-- 👀 I'm on GitHub because when I was a student, I created a translation agency's website using HTML and CSS.
-This website was localized into Brazilian Portuguese by me for educational purposes. Now, I want to deploy it
+- 👀 I'm on GitHub because when I was a student, I created a translation agency's website for educational purposes. I did it solely with HTML and CSS.
+This website was then localized into Brazilian Portuguese by me also for educational purposes. Now, I want to deploy it
 to showcase my work :)
 
 You can reach me on LinkedIn: https://linkedin.com/in/victoriacabraltranslator
